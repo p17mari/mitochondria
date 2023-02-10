@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="basic.css">
+    <script defer src="form.js"></script>
+    <script defer src="zoom.js"></script>
+
+    <title>Mitochondria</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Αρχική</a>
+        <a href="services.html">Υπηρεσίες</a>
+        <a href="info.html">Πληροφορίες</a>
+        <a class="active" href="form.html">Ραντεβού</a>
+        <input type="text" placeholder="Search..">
+    </div>
+
+    <form id="form" action="form.php" method="POST">
+        
+        <label for="fullname">Ονοματεπώνυμο:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br>
+        
+        <label for="maidename">Πατρώνυμο:</label><br>
+        <input type="text" id="maidename" name="maidename"><br>
+        
+        <label for="age">Ηλικία:</label><br>
+        <input type="number" id="age" name="age" min="18" required><br>
+        
+        <label for="phone">Τηλέφωνο:</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+       
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+       
+        <label for="afm">ΑΦΜ:</label><br>
+        <input type="number" id="afm" name="afm"><br>
+       
+        <label for="amka">ΑΜΚΑ:</label><br>
+        <input type="number" id="amka" name="amka"><br>
+       
+        <label for="credit">Αριθμός Κάρτας:</label><br>
+        <input type="number" id="credit" name="credit"><br>
+      
+        <label for="expiration">Ημερομηνία Λήξεως Κάρτας:</label><br>
+        <input type="date" id="expiration" name="expiration"><br>
+      
+        <label for="address">Διεύθυνση:</label><br>
+        <input type="text" id="address" name="address"><br>
+      
+        <label for="comment">Σχόλια:</label><br>
+        <textarea name="comment" id="comment" maxlength="250" placeholder="Σκοπός ραντεβού πχ αιματολογικές εξετάσεις..."></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="Reset" value="Reset">
+    </form>
+</body>
+</html>
